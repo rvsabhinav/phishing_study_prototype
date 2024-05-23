@@ -10,13 +10,12 @@ This project aims to investigate user susceptibility to phishing attacks on both
 - **data/QuestionPro-DesktopResponses.pdf**: Contains anonymized participant responses for Desktop version.
 - **data/QuestionPro-MobileResponses.pdf**: Contains anonymized participant responses for Mobile version.
 
-Documentation
+## Documentation
 docs/User Consent Form fix.pdf: The consent form used in the study.
 docs/IRB application (not submitted).pdf: The IRB application form.
 docs/HSP Certificate.pdf: contains Human Subjects Protection (HSP) training certificate.
 docs/User Study on User Behavior and Susceptibility to Phishing Attacks on Mobile vs Desktop Platforms.pdf: Detailed report of the prototype study
 
-Contact
+### Contact
 For any questions or further information, please contact:
-
 Venkata Subrahmanya Abhinav Rallapalli: sxr8961@mavs.uta.edu
