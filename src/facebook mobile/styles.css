@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f2f4f7;
+}
+
+.content {
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    transform: translate(0, 0);
+}
+
+.flex-div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.name-content {
+    text-align: center;
+    margin-bottom: 3rem; /* Added space between the text and form on mobile */
+}
+
+.name-content .logo {
+    font-size: 3.5rem;
+    color: #1877f2;
+}
+
+.name-content p {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    width: 100%;
+    max-width: 530px; /* Ensures form does not exceed this width */
+}
+
+form input, form button, form a {
+    font-size: 1.1rem;
+    padding: 0.8rem 1rem;
+    margin-bottom: 0.8rem;
+    width: 100%; /* Ensures full width on mobile */
+}
+
+form input:focus, form button:focus {
+    border: 1.8px solid #1877f2;
+    outline: none;
+}
+
+form .login, form .create-account {
+    background: #1877f2;
+    color: #fff;
+    border-radius: 0.4rem;
+    border: none;
+}
+
+form .login:hover, form .create-account:hover {
+    cursor: pointer;
+    background: darken(#1877f2, 5%);
+}
+
+form a {
+    text-decoration: none;
+    text-align: center;
+    color: #1877f2;
+}
+
+form hr {
+    background: #f7f7f7;
+    margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 60%; /* Smaller font size for mobile */
+    }
+
+    .flex-div {
+        flex-direction: column;
+    }
+
+    form {
+        width: 90%; /* Smaller form width on mobile */
+        height: auto; /* Auto-adjust height based on content */
+    }
+
+    form input, form button, form a {
+        font-size: 1.5rem;
+    }
+}

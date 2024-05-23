@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <style>
+        .img_1 {
+            height: 60px; /* Larger for better visibility on mobile */
+            width: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            width: 100%; /* Full width for easier clicking on mobile */
+            margin-top: 10px;
+        }
+
+        .btn btn-secondary{
+            color: white;
+        }
+
+        form {
+            border: 1px solid lightgrey;
+            padding: 20px;
+            border-radius: 5px;
+            width: 100%; /* Full width forms on mobile */
+            max-width: 500px; /* Max width for larger devices */
+        }
+
+        .sign-in {
+            font-size: 24px; /* Slightly smaller for mobile */
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .conditions {
+            font-size: 12px; /* Larger for mobile readability */
+            color: blue;
+            margin-top: 30px;
+        }
+
+        .footer_1 {
+            padding: 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+        
+        /* Media Query for devices smaller than 768px */
+        @media (max-width: 768px) {
+            .img_1 {
+                height: 31px; /* Adjust image size for smaller screens */
+            }
+            
+            .sign-in, .conditions {
+                text-align: center; /* Centering text for mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="text-center">
+        <img class="img_1" src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo">
+    </header>
+
+    <div class="d-flex justify-content-center">
+        <form>
+            <div class="sign-in">Sign In</div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email (phone for mobile accounts)</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+                <small id="emailHelp" class="form-text text-muted"><a href="https://www.amazon.com/ap/forgotpassword?openid.pape.max_auth_age=120&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&accountStatusPolicy=P1&siteState=unregistered%2CEN_US&pageId=aws.login&openid.pape.preferred_auth_policies=MultifactorPhysical&openid.return_to=https%3A%2F%2Fsignin.aws.amazon.com%2Foauth%3Fcoupled_root%3Dtrue%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fconsole.aws.amazon.com%252Fconsole%252Fhome%253Fstate%253DhashArgs%252523%2526isauthcode%253Dtrue%26client_id%3Darn%253Aaws%253Aiam%253A%253A015428540659%253Auser%252Fhomepage&openid.assoc_handle=aws&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&language=EN_US&forceMobileApp=0&forceMobileLayout=1">Forgot your password?</a></small>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Keep me signed in</label>
+            </div>
+            <button type="button" class="btn btn-warning" style="color: black"><a href="https://www.amazon.com/-/es/ap/signin?openid.pape.max_auth_age=3600&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fmyh%2Fhouseholds%3Flanguage%3Des&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&language=en_US&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0">Sign In</a></button>
+            <button type="button" class="btn btn-sec">Create your Amazon account</button>
+        </form>
+    </div>
+
+    <footer class="footer_1">
+        <a href="#">Conditions of Use</a> | <a href="#">Privacy Notice</a> | <a href="#">Help</a>
+    </footer>
+</body>
+</html>
